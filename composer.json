@@ -1,0 +1,13 @@
+{
+  "require": {
+    "slim/slim": "^3.5",
+    "slim/twig-view": "^2.1",
+    "slim/flash": "^0.1.0",
+    "symfony/var-dumper": "^3.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  }
+}
