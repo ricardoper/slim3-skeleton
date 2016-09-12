@@ -2,7 +2,7 @@
   "name": "ricardoper/slim3-skeleton",
   "type": "library",
   "license": "MIT",
-  "description": "PHP Slim Framework v3 Skeleton With Twig Views, Flash Messages, VarDumper And A Good Folder Organization",
+  "description": "PHP Slim Framework v3.5 Skeleton With Twig Views, Flash Messages, VarDumper And A Good Folder Organization",
   "keywords": [
     "PHP",
     "Slim",

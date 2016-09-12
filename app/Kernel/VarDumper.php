@@ -3,7 +3,7 @@
 use Symfony\Component\VarDumper\Dumper\CliDumper;
 use Symfony\Component\VarDumper\Cloner\VarCloner;
 
-class Dumper
+class VarDumper
 {
 
     /**
@@ -14,7 +14,7 @@ class Dumper
     public function dump($value)
     {
         if (class_exists(CliDumper::class)) {
-            $dumper = 'cli' === PHP_SAPI ? new CliDumper : new HtmlDumper;
+            $dumper = 'cli' === PHP_SAPI ? new CliDumper : new HtmlVarDumper;
 
             $dumper->dump((new VarCloner)->cloneVar($value));
         } else {

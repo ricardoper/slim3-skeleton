@@ -1,8 +1,9 @@
 <?php namespace App\Services;
 
+use App\Kernel\ServiceInterface;
 use App\Kernel\ControllerStrategy;
 
-class ControllerStrategyService
+class ControllerStrategyService implements ServiceInterface
 {
 
     /**

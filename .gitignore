@@ -1,3 +1,3 @@
-storage/cache/*
+storage/*
 vendor/*
 .idea/*

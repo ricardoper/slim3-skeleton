@@ -1,5 +1,7 @@
 <?php
 
-$app->get('/', 'App\Controllers\HomeController:index');
+// Demo Routes //
+require 'demo.php';
 
-$app->get('/hello/{name}', 'App\Controllers\HelloController:index');
+// Example Routes //
+// require 'example.php';

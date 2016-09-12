@@ -1,8 +1,9 @@
 <?php namespace App\Services;
 
 use Slim\Flash\Messages;
+use App\Kernel\ServiceInterface;
 
-class FlashMessagesService
+class FlashMessagesService implements ServiceInterface
 {
 
     /**

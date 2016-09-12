@@ -1,6 +1,6 @@
 <?php
 
-use App\Kernel\Dumper;
+use App\Kernel\VarDumper;
 
 if (!function_exists('d')) {
     /**
@@ -13,7 +13,7 @@ if (!function_exists('d')) {
     {
         array_map(
             function ($x) {
-                (new Dumper())->dump($x);
+                (new VarDumper())->dump($x);
             },
             func_get_args()
         );
@@ -31,7 +31,7 @@ if (!function_exists('dd')) {
     {
         array_map(
             function ($x) {
-                (new Dumper)->dump($x);
+                (new VarDumper)->dump($x);
             },
             func_get_args()
         );
@@ -40,7 +40,33 @@ if (!function_exists('dd')) {
     }
 }
 
-if (! function_exists('base_path')) {
+if (!function_exists('env')) {
+    /**
+     * Gets the value of an environment variable
+     *
+     * @param  string $key
+     * @param  mixed $default
+     * @return mixed
+     */
+    function env($key, $default = null)
+    {
+        $value = getenv($key);
+
+        if ($value === false) {
+            return $default;
+        }
+
+        $strLen = strlen($value);
+
+        if ($strLen > 1 && $value[0] === '"' && $value[$strLen - 1] === '"') {
+            return substr($value, 1, -1);
+        }
+
+        return $value;
+    }
+}
+
+if (!function_exists('base_path')) {
     /**
      * Get the path to the base folder
      *
@@ -52,7 +78,7 @@ if (! function_exists('base_path')) {
     }
 }
 
-if (! function_exists('app_path')) {
+if (!function_exists('app_path')) {
     /**
      * Get the path to the application folder
      *
@@ -64,7 +90,7 @@ if (! function_exists('app_path')) {
     }
 }
 
-if (! function_exists('config_path')) {
+if (!function_exists('config_path')) {
     /**
      * Get the path to the config folder
      *
@@ -76,7 +102,7 @@ if (! function_exists('config_path')) {
     }
 }
 
-if (! function_exists('public_path')) {
+if (!function_exists('public_path')) {
     /**
      * Get the path to the public folder
      *
@@ -88,7 +114,7 @@ if (! function_exists('public_path')) {
     }
 }
 
-if (! function_exists('storage_path')) {
+if (!function_exists('storage_path')) {
     /**
      * Get the path to the storage folder
      *

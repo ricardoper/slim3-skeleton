@@ -2,8 +2,9 @@
 
 use Slim\Views\Twig;
 use Slim\Views\TwigExtension;
+use App\Kernel\ServiceInterface;
 
-class TwigViewService
+class TwigViewService implements ServiceInterface
 {
 
     /**
