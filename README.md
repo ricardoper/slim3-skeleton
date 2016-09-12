@@ -25,7 +25,7 @@ This skeleton application was built for Composer. This makes setting up a new Sl
 Run this command from the directory in which you want to install your new Slim Framework v3.5 Skeleton.
 
 ```bash
-composer create-project slim/slim-skeleton [my-app-name]
+composer create-project ricardoper/slim3-skeleton [my-app-name]
 ```
 
 Replace ```[my-app-name]``` with the desired directory name for your new application. You'll want to:
