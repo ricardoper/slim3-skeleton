@@ -1,4 +1,25 @@
 {
+  "name": "ricardoper/slim3-skeleton",
+  "type": "library",
+  "license": "MIT",
+  "description": "PHP Slim Framework v3 Skeleton With Twig Views, Flash Messages, VarDumper And A Good Folder Organization",
+  "keywords": [
+    "PHP",
+    "Slim",
+    "Framework",
+    "Skeleton",
+    "Twig",
+    "Flash",
+    "VarDumper"
+  ],
+  "homepage": "https://github.com/ricardoper",
+  "authors": [
+    {
+      "name": "Ricardo Pereira",
+      "email": "github@ricardopereira.es",
+      "homepage": "http://ricardopereira.es"
+    }
+  ],
   "require": {
     "slim/slim": "^3.5",
     "slim/twig-view": "^2.1",
