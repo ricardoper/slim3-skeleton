@@ -17,8 +17,12 @@ class VarDumper
             $dumper = 'cli' === PHP_SAPI ? new CliDumper : new HtmlVarDumper;
 
             $dumper->dump((new VarCloner)->cloneVar($value));
+
+            unset($dumper);
         } else {
             var_dump($value);
         }
+
+        unset($value);
     }
 }

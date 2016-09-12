@@ -21,5 +21,7 @@ class App extends BaseApp
 
             unset($instance);
         }
+
+        unset($container, $services, $service);
     }
 }

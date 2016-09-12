@@ -6,9 +6,7 @@ require 'kernel.php';
 
 session_start();
 
-$settings = ['settings' => require config_path() . '/app.php'];
-
-$app = new App($settings);
+$app = new App(['settings' => require config_path() . '/app.php']);
 
 $app->registerServices();
 

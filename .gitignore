@@ -2,4 +2,3 @@ storage/*
 vendor/*
 .idea/*
 .env
-.env.*
