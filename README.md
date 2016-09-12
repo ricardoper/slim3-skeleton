@@ -23,7 +23,7 @@ This skeleton application was built for Composer. This makes setting up a new Sl
 
 Run this command from the directory in which you want to install your new Slim Framework v3.5 Skeleton.
 
-```php
+```bash
 composer create-project slim/slim-skeleton [my-app-name]
 ```
 
