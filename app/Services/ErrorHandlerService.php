@@ -1,9 +1,9 @@
 <?php namespace App\Services;
 
+use App\Kernel\ErrorHandler;
 use App\Kernel\ServiceInterface;
-use App\Kernel\ControllerStrategy;
 
-class ControllerStrategyService implements ServiceInterface
+class ErrorHandlerService implements ServiceInterface
 {
 
     /**
@@ -11,7 +11,7 @@ class ControllerStrategyService implements ServiceInterface
      */
     public function name()
     {
-        return 'foundHandler';
+        return 'errorHandler';
     }
 
     /**
@@ -19,8 +19,8 @@ class ControllerStrategyService implements ServiceInterface
      */
     public function register()
     {
-        return function () {
-            return new ControllerStrategy();
+        return function ($container) {
+            return new ErrorHandler($container->logger);
         };
     }
 }

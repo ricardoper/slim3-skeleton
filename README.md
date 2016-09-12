@@ -6,18 +6,19 @@ This skeleton application was built for Composer. This makes setting up a new Sl
 
 [![Latest Stable Version](https://poser.pugx.org/ricardoper/slim3-skeleton/v/stable.svg)](https://packagist.org/packages/slim3-skeleton/twitteroauth) [![Total Downloads](https://poser.pugx.org/ricardoper/slim3-skeleton/downloads.svg)](https://packagist.org/packages/slim3-skeleton/twitteroauth) ![License](https://poser.pugx.org/ricardoper/slim3-skeleton/license.svg)
 
-- Namespaced
-- PHP 5.4
 - [PSR-2](http://www.php-fig.org/psr/psr-2/ "PHP Framework Interop Group")
 - [PSR-4](http://www.php-fig.org/psr/psr-4/ "PHP Framework Interop Group")
-- OOP
+- PHP 5.4
+- Namespaced
 
++ Helpers
++ Services
 + Twig Views
 + Flash Messages
 + Symfony VarDumper
-+ Folder Structure with sense
-+ Services
-+ Helpers
++ Logging with Monolog
++ Folders structure with sense
++ Environment variables with Dotenv
 
 ## How to install this skeleton
 
@@ -68,9 +69,7 @@ You can add as many routes files as you want (```/app/Routes```), but you need t
 
 You can add as many services as you want in a clean way (```/app/Services```).
 
-After add your service, you can enable or disable it in ```config/service.php``` configuration file.
-
-Enjoy the simplicity :oP
+After add your service, you can enable or disable it in ```config/services.php``` configuration file.
 
 ## Configurations
 
@@ -80,10 +79,12 @@ You can add as many configurations files as you want (```/config```), but you ne
 
 Try the skeleton demo pages.
 
-##### Welcome page:
+#### Welcome page:
 http(s)://virtualhost.int/
 
-##### Hello user:
+#### Hello user:
 http(s)://virtualhost.int/hello/[name]
 
 **NOTE:** Replace ```[name]``` with the desired User name
+
+### Enjoy the simplicity :oP

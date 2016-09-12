@@ -33,6 +33,8 @@ class TwigViewService implements ServiceInterface
                 )
             );
 
+            unset($container);
+
             return $view;
         };
     }

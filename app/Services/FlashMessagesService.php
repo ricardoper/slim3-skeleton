@@ -19,7 +19,7 @@ class FlashMessagesService implements ServiceInterface
      */
     public function register()
     {
-        return function ($container) {
+        return function () {
             return new Messages;
         };
     }
