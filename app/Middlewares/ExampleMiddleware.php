@@ -1,9 +1,8 @@
 <?php namespace App\Middlewares;
 
-use Slim\App;
+use Slim\Http\Request;
+use Slim\Http\Response;
 use App\Kernel\MiddlewareAbstract;
-use Psr\Http\Message\ResponseInterface;
-use Psr\Http\Message\ServerRequestInterface;
 
 class ExampleMiddleware extends MiddlewareAbstract
 {
@@ -11,12 +10,12 @@ class ExampleMiddleware extends MiddlewareAbstract
     /**
      * Middleware
      *
-     * @param ServerRequestInterface $request
-     * @param ResponseInterface $response
-     * @param App $next
-     * @return ResponseInterface
+     * @param Request $request
+     * @param Response $response
+     * @param $next
+     * @return Response
      */
-    public function __invoke(ServerRequestInterface $request, ResponseInterface $response, App $next)
+    public function __invoke(Request $request, Response $response, $next)
     {
         $response->getBody()->write('-- BEFORE --<br><br>');
 
