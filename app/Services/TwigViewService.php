@@ -33,6 +33,8 @@ class TwigViewService implements ServiceInterface
                 )
             );
 
+            $view->getEnvironment()->addGlobal('flash', $container->flash);
+
             unset($container);
 
             return $view;

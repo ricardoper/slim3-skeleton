@@ -86,6 +86,10 @@ After add your service, you can enable or disable it in ```config/services.php``
 
 You can add as many configurations files as you want (```/config```), but you need to enable these files in ```/config/app.php``` file.
 
+## Twig Globals
+
+flash : To get Flash Messages
+
 ## Demo pages
 
 Try the skeleton demo pages.
