@@ -28,8 +28,8 @@ class TwigViewService implements ServiceInterface
 
             $view->addExtension(
                 new TwigExtension(
-                    $container['router'],
-                    $container['request']->getUri()
+                    $container->router,
+                    $container->request->getUri()
                 )
             );
 
