@@ -51,6 +51,10 @@ Replace ```[my-app-name]``` with the desired directory name for your new applica
 - getView() : Returns Twig View
 - render(string $template, array $data) : Renders Twig page stored in Views folder
 
+## Middleware methods
+
+- getContainer() : Returns the Slim App container
+
 ## Helpers methods
 
 - d() : Symfony VarDumper and continue

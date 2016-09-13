@@ -1,14 +1,15 @@
 <?php namespace App\Middlewares;
 
 use Slim\App;
+use App\Kernel\MiddlewareAbstract;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 
-class ExampleMiddleware
+class ExampleMiddleware extends MiddlewareAbstract
 {
 
     /**
-     * App Middleware
+     * Middleware
      *
      * @param ServerRequestInterface $request
      * @param ResponseInterface $response
