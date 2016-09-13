@@ -1,9 +1,9 @@
 <?php namespace App\Services;
 
 use Monolog\Logger;
-use Monolog\Handler\StreamHandler;
-use Monolog\Processor\UidProcessor;
 use App\Kernel\ServiceInterface;
+use Monolog\Processor\UidProcessor;
+use Monolog\Handler\StreamHandler;
 
 class MonologService implements ServiceInterface
 {
