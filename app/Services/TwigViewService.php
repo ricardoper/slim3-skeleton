@@ -23,7 +23,7 @@ class TwigViewService implements ServiceInterface
         return function ($container) {
             $view = new Twig(
                 app_path() . '/Views',
-                $container->get('settings')['twig']
+                $container->settings['twig']
             );
 
             $view->addExtension(

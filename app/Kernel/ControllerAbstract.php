@@ -40,6 +40,17 @@ abstract class ControllerAbstract
     }
 
     /**
+     * Get Service From Container
+     *
+     * @param string $service
+     * @return mixed
+     */
+    protected function getService($service)
+    {
+        return $this->container->{$service};
+    }
+
+    /**
      * Get Request
      *
      * @return Request

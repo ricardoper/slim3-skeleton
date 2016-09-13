@@ -46,6 +46,7 @@ Replace ```[my-app-name]``` with the desired directory name for your new applica
 ## Controllers methods
 
 - getContainer() : Returns the Slim App container
+- getService(string $service) : Returns service from container by name
 - getRequest() : Returns HTTP Request
 - getResponse() : Returns HTTP Response
 - getView() : Returns Twig View
@@ -54,6 +55,7 @@ Replace ```[my-app-name]``` with the desired directory name for your new applica
 ## Middleware methods
 
 - getContainer() : Returns the Slim App container
+- getService(string $service) : Returns service from container by name
 
 ## Helpers methods
 

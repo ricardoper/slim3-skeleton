@@ -22,7 +22,7 @@ class MonologService implements ServiceInterface
     public function register()
     {
         return function ($container) {
-            $settings = $container->get('settings')['logger'];
+            $settings = $container->settings['logger'];
 
             $logger = new Logger($settings['name']);
 
