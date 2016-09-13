@@ -14,14 +14,34 @@ class App extends BaseApp
 
         $services = $container->get('settings')['services'];
 
-        foreach ($services as $service) {
-            $instance = new $service();
+        if (is_array($services) && !empty($services)) {
+            foreach ($services as $service) {
+                $instance = new $service();
 
-            $container[$instance->name()] = $instance->register();
+                $container[$instance->name()] = $instance->register();
 
-            unset($instance);
+                unset($instance);
+            }
         }
 
         unset($container, $services, $service);
+    }
+
+    /**
+     * Register App Middlewares
+     */
+    public function registerAppMiddlewares()
+    {
+        $container = $this->getContainer();
+
+        $middlewares = $container->get('settings')['middlewares'];
+
+        if (is_array($middlewares) && !empty($middlewares)) {
+            foreach ($middlewares as $middleware) {
+                $this->add($middleware);
+            }
+        }
+
+        unset($container, $middlewares, $middleware);
     }
 }

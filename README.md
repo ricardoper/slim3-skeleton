@@ -36,6 +36,7 @@ Replace ```[my-app-name]``` with the desired directory name for your new applica
 
 - /app : Application code (App Namespace)
   + ./Controllers : Add your controllers here
+  + ./Middlewares : Add your middlewares here
   + ./Routes : Add your routes here
   + ./Services : Add your services here
   + ./Views : Add your Twig views here
@@ -60,6 +61,12 @@ Replace ```[my-app-name]``` with the desired directory name for your new applica
 - config_path() : Returns config path location
 - public_path() : Returns public path location
 - storage_path() : Returns storage path location
+
+## Middlewares
+
+You can add as many middlewares as you want in a clean way (```/app/Middlewares```).
+
+After add your middleware, you can enable or disable it in ```config/middlewares.php``` configuration file.
 
 ## Routes
 

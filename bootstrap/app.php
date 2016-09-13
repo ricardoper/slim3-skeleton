@@ -10,6 +10,8 @@ $app = new App(['settings' => require config_path() . '/app.php']);
 
 $app->registerServices();
 
+$app->registerAppMiddlewares();
+
 require app_path() . '/Routes/app.php';
 
 $app->run();
