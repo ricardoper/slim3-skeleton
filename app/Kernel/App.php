@@ -1,5 +1,6 @@
 <?php namespace App\Kernel;
 
+use Slim\Container;
 use Slim\App as BaseApp;
 
 class App extends BaseApp
@@ -10,12 +11,18 @@ class App extends BaseApp
      */
     public function registerServices()
     {
+        /**
+         * @var $container Container
+         */
         $container = $this->getContainer();
 
-        $services = $container->get('settings')['services'];
+        $services = $container->settings['services'];
 
         if (is_array($services) && !empty($services)) {
             foreach ($services as $service) {
+                /**
+                 * @var $instance ServiceInterface
+                 */
                 $instance = new $service();
 
                 $container[$instance->name()] = $instance->register();
@@ -32,9 +39,12 @@ class App extends BaseApp
      */
     public function registerAppMiddlewares()
     {
+        /**
+         * @var $container Container
+         */
         $container = $this->getContainer();
 
-        $middlewares = $container->get('settings')['middlewares'];
+        $middlewares = $container->settings['middlewares'];
 
         if (is_array($middlewares) && !empty($middlewares)) {
             foreach ($middlewares as $middleware) {
