@@ -1,9 +1,9 @@
 <?php namespace App\Kernel;
 
 use Slim\Views\Twig;
+use Slim\Http\Request;
+use Slim\Http\Response;
 use Interop\Container\ContainerInterface;
-use Psr\Http\Message\ResponseInterface as Response;
-use Psr\Http\Message\ServerRequestInterface as Request;
 
 abstract class ControllerAbstract
 {
