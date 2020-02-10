@@ -3,7 +3,7 @@
 use Slim\Views\Twig;
 use Slim\Http\Request;
 use Slim\Http\Response;
-use Interop\Container\ContainerInterface;
+use Psr\Container\ContainerInterface;
 
 abstract class ControllerAbstract
 {
