@@ -36,5 +36,8 @@
     "files": [
       "bootstrap/helpers.php"
     ]
+  },
+  "config": {
+    "optimize-autoloader": true
   }
 }
