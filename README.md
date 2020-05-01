@@ -2,15 +2,15 @@
 
 Use this skeleton application to quickly setup and start working on a new Slim Framework v3.5 application.
 
-This skeleton application was built for Composer. This makes setting up a new Slim Framework v3.5 application quick and easy.
+**NOTE**: If you want a similar skeleton for **version 4**, go to: (https://github.com/ricardoper/slim4-twig-skeleton).
 
-[![Latest Stable Version](https://poser.pugx.org/ricardoper/slim3-skeleton/v/stable.svg)](https://packagist.org/packages/ricardoper/slim3-skeleton) [![Total Downloads](https://poser.pugx.org/ricardoper/slim3-skeleton/downloads.svg)](https://packagist.org/packages/ricardoper/slim3-skeleton) ![License](https://poser.pugx.org/ricardoper/slim3-skeleton/license.svg)
+This skeleton application was built for Composer. This makes setting up a new Slim Framework v3.5 application quick and easy.
 
 - [PSR-2](http://www.php-fig.org/psr/psr-2/ "PHP Framework Interop Group")
 - [PSR-4](http://www.php-fig.org/psr/psr-4/ "PHP Framework Interop Group")
 - PHP 5.5
 - Namespaced
-<br><br>
+
 + Helpers
 + Services
 + Twig Views

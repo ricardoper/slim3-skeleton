@@ -1,4 +1,5 @@
-storage/*
-vendor/*
-.idea/*
-.env
+/vendor/
+
+/.env
+/.idea
+/composer.lock
